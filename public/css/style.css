@@ -1,0 +1,164 @@
+/* Geral */
+* {
+    font-family: "Roboto";
+    color: #fff;
+}
+body {
+    background: linear-gradient(329.54deg, #1e1e1f 0%, #000000 70%);
+}
+
+/* Login */
+.logo {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.login-form {
+    padding: 50px 200px;
+}
+.login-form label {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.login-form input {
+    font-size: 16px;
+    width: 548px;
+    height: 40px;
+    background: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #fff;
+    border: 4px solid #daa520;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.btn-entrar {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #daa520;
+    margin: 10px auto;
+    border: 4px solid #daa520;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: none;
+    padding: 10px 30px;
+}
+
+.btn-entrar:hover {
+    color: #e4b643;
+    border: 4px solid #e4b643;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btns a:hover {
+    color: #daa520;
+    border: #daa520 solid 1px;
+    padding: 8px 50px;
+}
+
+/*index */
+.left {
+    width: 25%;
+    height: 100%;
+    border: #daa520 solid 1px;
+}
+
+.logo-index img {
+    width: 100%;
+    padding: 35px 10% 20px 10%;
+}
+
+.info-topo {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.info-topo a:hover {
+    color: #daa520;
+    border: #daa520 solid 1px;
+    padding: 10px 30px;
+}
+
+.info-topo .caixa-fechado {
+    padding-top: 15px;
+    color: #ffcc00;
+}
+
+.aside-menu {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    text-transform: uppercase;
+}
+
+.aside-menu ul li {
+    padding-top: 40px;
+}
+
+.aside-menu ul li a:hover {
+    color: #daa520;
+    border: #daa520 solid 1px;
+    padding: 10px 70px;
+}
+
+.div-rodape {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.div-rodape p {
+    padding-bottom: 30px;
+}
+
+.btn-sair {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #f42424;
+    margin: 10px auto;
+    border: 4px solid #f42424;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: none;
+    padding: 10px 70px;
+}
+
+.btn-sair:hover {
+    color: #d35050;
+    border: 4px solid #d35050;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    border: #daa520 solid 1px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
