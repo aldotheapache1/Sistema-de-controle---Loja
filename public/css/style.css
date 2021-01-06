@@ -7,6 +7,19 @@ body {
     background: linear-gradient(329.54deg, #1e1e1f 0%, #000000 70%);
 }
 
+.btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: none;
+    padding: 10px 30px;
+}
+
 /* Login */
 .logo {
     text-align: center;
@@ -41,21 +54,9 @@ body {
 }
 
 .btn-entrar {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #daa520;
-    margin: 10px auto;
     border: 4px solid #daa520;
-    box-sizing: border-box;
-    border-radius: 30px;
-    background: none;
-    padding: 10px 30px;
+    display: flex;
 }
 
 .btn-entrar:hover {
@@ -74,10 +75,15 @@ body {
 }
 
 /*index */
+.index {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 .left {
     width: 25%;
     height: 100%;
-    border: #daa520 solid 1px;
+    background: rgb(22, 22, 22);
 }
 
 .logo-index img {
@@ -105,12 +111,11 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-
     text-transform: uppercase;
 }
 
 .aside-menu ul li {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .aside-menu ul li a:hover {
@@ -119,33 +124,70 @@ body {
     padding: 10px 70px;
 }
 
-.div-rodape {
+.div-baixo {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
-.div-rodape p {
+.clock {
     padding-bottom: 30px;
 }
 
 .btn-sair {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
     color: #f42424;
-    margin: 10px auto;
     border: 4px solid #f42424;
-    box-sizing: border-box;
-    border-radius: 30px;
-    background: none;
     padding: 10px 70px;
 }
 
 .btn-sair:hover {
     color: #d35050;
     border: 4px solid #d35050;
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+}
+
+.cart-logo {
+    width: 55px;
+    margin: 14px 14px 10px auto;
+}
+
+.form-valor-caixa {
+    padding: 150px 300px;
+}
+.form-valor-caixa label {
+    display: block;
+}
+.form-valor-caixa input {
+    font-size: 16px;
+    width: 450px;
+    height: 40px;
+    background: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #fff;
+    border: 4px solid #daa520;
+}
+
+.form-valor-caixa input:focus {
+    outline: none;
+}
+.div-botao-caixa {
+    text-align: center;
+}
+.btn-caixa {
+    border-radius: 0;
+    color: #339900;
+    border: 4px solid #339900;
+    padding: 10px 70px;
+}
+
+.btn-caixa:hover {
+    color: #55ff00;
+    border: 4px solid #55ff00;
 }
 
 /* footer */

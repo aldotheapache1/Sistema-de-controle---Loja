@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('index');
 })->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
-    return view('dashboard');
-})->name('dashboard');
+    return view('index');
+})->name('index');

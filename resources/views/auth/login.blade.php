@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Karoline Modas - Login')
+@section('title', 'Login - Karoline Modas')
 
 @section('content')
 <div class="container logo">
@@ -17,7 +17,7 @@
         <input id="password"  type="password" name="password" required/>
 
         <div class="btns">
-            <button class="btn-entrar">
+            <button class="btn btn-entrar">
                 {{ __('Entrar') }}
             </button>
             @if (Route::has('password.request'))

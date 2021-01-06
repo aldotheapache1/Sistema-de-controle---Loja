@@ -14,7 +14,7 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
         
     </head>
-    <body>
+    <body onload="startTime()">
 
         <main>
             <div class="container-fluid">
@@ -34,5 +34,6 @@
                     <p>Karoline Modas &copy; 2020</p>
             </footer>
         @endif
+        <script src="/js/script.js"></script>
     </body>
 </html>
