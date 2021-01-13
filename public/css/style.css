@@ -106,6 +106,11 @@ body {
     color: #ffcc00;
 }
 
+.info-topo .caixa-aberto {
+    padding-top: 15px;
+    color: #339900;
+}
+
 .aside-menu {
     text-align: center;
     padding-top: 30px;
@@ -189,6 +194,101 @@ body {
     border: 4px solid #55ff00;
 }
 
+.table-index {
+    padding: 30px 110px;
+}
+
+.table-index table {
+    width: 816px;
+}
+
+.table-index thead tr,
+.table-index tbody {
+    display: block;
+}
+
+.table-index tbody {
+    height: 369; /* Just for the demo          */
+    overflow-y: auto; /* Trigger vertical scroll    */
+    overflow-x: hidden; /* Hide the horizontal scroll */
+}
+
+.table-index tbody td,
+.table-index thead th {
+    width: 140px;
+}
+
+thead th:last-child {
+    width: 156px; /* 140px + 16px scrollbar width */
+}
+
+.table-index table,
+.table-index th,
+.table-index td {
+    border: 1px solid #daa520;
+    border-collapse: collapse;
+}
+
+.table-index th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #daa520;
+}
+.table-index td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+tr .table_total {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    width: 50%;
+}
+
+.table_total span {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.checkboxes {
+    align-items: center;
+    text-align: center;
+}
+
+.checkboxes input {
+    width: 28px;
+    height: 28px;
+    margin: 0 15px;
+}
+
+.checkboxes label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 16px;
+    color: #ffffff;
+}
 /* footer */
 footer {
     text-align: center;
