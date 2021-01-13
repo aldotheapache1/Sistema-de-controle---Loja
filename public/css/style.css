@@ -69,9 +69,8 @@ body {
 }
 
 .btns a:hover {
-    color: #daa520;
-    border: #daa520 solid 1px;
-    padding: 8px 50px;
+    color: #aa9a72;
+    text-decoration: bisque;
 }
 
 /*index */
@@ -97,7 +96,7 @@ body {
 }
 
 .info-topo a:hover {
-    color: #daa520;
+    color: #fff;
     border: #daa520 solid 1px;
     padding: 10px 30px;
 }
@@ -155,19 +154,19 @@ body {
 }
 
 .form-valor-caixa {
-    padding: 150px 300px;
+    padding: 150px 230px;
 }
 .form-valor-caixa label {
     display: block;
 }
 .form-valor-caixa input {
     font-size: 16px;
-    width: 450px;
+    width: 548px;
     height: 40px;
     background: none;
     border-radius: 20px;
     margin-bottom: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     color: #fff;
     border: 4px solid #daa520;
 }

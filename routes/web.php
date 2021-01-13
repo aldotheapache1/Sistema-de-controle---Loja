@@ -12,11 +12,23 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\MyController;
 
-Route::get('/', function () {
+//Route::get('/', function () {
+//    [EventController::class, 'checkCashRegisterOpen'])
+//})->middleware('auth');
+
+Route::get('/',  [MyController::class, 'checkCashRegisterOpen']);
+
+
+
+Route::get('/dashboard', function () {
     return view('index');
 })->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
     return view('index');
 })->name('index');
+
+Route::post('/index', [MyController::class, 'storeCashRegister'])->middleware('auth');
+
