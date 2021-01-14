@@ -39,5 +39,16 @@ class MyController extends Controller
 
         return view('index', ['currentCashRegister' => $currentCashRegister]);
     }
+
+    public function closeCashRegister($id)
+    {
+        $CashRegister = CashRegister::find($id);
+        $CashRegister->open_close = 0;
+
+        $CashRegister->save();
+
+        return redirect('/dashboard');
+
+    }
     
 }

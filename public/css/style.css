@@ -108,6 +108,7 @@ body {
 
 .info-topo .caixa-aberto {
     padding-top: 15px;
+    padding-bottom: 15px;
     color: #339900;
 }
 
@@ -192,6 +193,15 @@ body {
 .btn-caixa:hover {
     color: #55ff00;
     border: 4px solid #55ff00;
+}
+
+.info-topo .btn-fechar-caixa {
+    color: #f42424;
+}
+
+.info-topo .btn-fechar-caixa:hover {
+    color: #d35050;
+    border: 4px solid #d35050;
 }
 
 .table-sales {

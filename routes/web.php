@@ -31,4 +31,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
 })->name('index');
 
 Route::post('/index', [MyController::class, 'storeCashRegister'])->middleware('auth');
+Route::get('/index/close/{id}', [MyController::class, 'closeCashRegister'])->middleware('auth');
 

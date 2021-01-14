@@ -12,8 +12,15 @@
 
         <div class="info-topo">
             <a class="nome-usuario" href="{{ route('profile.show') }}">{{ Auth::user()->name }}</a>
-            @if(count($currentCashRegister) > 0)
+            @if(isset($currentCashRegister))
                 <p class="caixa-aberto">Caixa Aberto</p>
+                <form action="/index/close/{{ $currentCashRegister['id'] }}" method="GET">
+                @csrf
+                    <a href="/index/close/{{ $currentCashRegister['id'] }}" 
+                        class="btn btn-fechar-caixa" >
+                        Fechar Caixa
+                    </a>
+                </form>
             @else
                 <p class="caixa-fechado">Caixa Fechado</p>
             @endif
@@ -68,7 +75,7 @@
                 <img src="/img/cart.svg" alt="Imagem Carrinho">
             </a>
         </div>
-        @if(count($currentCashRegister) > 0)
+        @if(isset($currentCashRegister))
             <div class="checkboxes">
                 <input type="checkbox" id="payments" name="payments">
                 <label for="payments">Pagamentos</label>
