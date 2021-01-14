@@ -77,7 +77,7 @@
                 <label for="sales">Vendas</label>
             </div>
             
-            <div class="table-index">
+            <div class="table-sales">
                 <table >
                     <thead>
                         <tr>
@@ -161,8 +161,7 @@
                     </tbody>
 
                 </table>
-            </div>
-            
+            </div>         
         @else
             <div class="form-valor-caixa">
                 <form action="/index" method="POST">

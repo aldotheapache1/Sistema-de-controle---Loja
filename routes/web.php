@@ -18,7 +18,7 @@ use App\Http\Controllers\MyController;
 //    [EventController::class, 'checkCashRegisterOpen'])
 //})->middleware('auth');
 
-Route::get('/',  [MyController::class, 'checkCashRegisterOpen']);
+Route::get('/',  [MyController::class, 'checkCashRegisterOpen'])->middleware('auth');
 
 
 
