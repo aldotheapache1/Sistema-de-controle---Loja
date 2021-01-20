@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="index" onload="startTime()">
+<div class="index" >
     <aside class="left">
         <div class="logo-index">
             <img src="/img/logo.svg" alt="Logo Karoline Modas">
@@ -166,9 +166,32 @@
                             <td class="table_total" colspan="3">Total em caixa: R$ {{$currentCashRegister['initial_value']}},00 <span>Vendas á vista(50,00) Pagamentos (50,00)</span></td>      
                         </tr>
                     </tbody>
-
                 </table>
-            </div>         
+            </div>
+            <div class="table-payments">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Valor</th>
+                            <th>Cobrador</th>
+                            <th>Total Restante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Darci</td>      
+                            <td>R$ 250,00</td>      
+                            <td>Gian Lucas da Silva</td>      
+                            <td>R$ 250,00</td>      
+                        </tr>
+                        <tr>
+                            <td class="table_total" colspan="2">Total em vendas: R$ {{$currentCashRegister['initial_value']}},00</td>      
+                            <td class="table_total" colspan="2">Total em caixa: R$ {{$currentCashRegister['initial_value']}},00 <span>Vendas á vista(50,00) Pagamentos (50,00)</span></td>      
+                        </tr>
+                    </tbody>
+                </table>
+            </div>        
         @else
             <div class="form-valor-caixa">
                 <form action="/index" method="POST">

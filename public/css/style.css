@@ -288,6 +288,56 @@ tr .table_total {
     color: #ffffff;
 }
 
+.table-payments {
+    padding: 30px 110px;
+}
+
+.table-payments table {
+    width: 816px;
+}
+
+.table-payments thead tr,
+.table-payments tbody {
+    display: block;
+}
+
+.table-payments tbody {
+    height: 87; /*ajustar dps*/
+    overflow-y: auto; /* Trigger vertical scroll    */
+    overflow-x: hidden; /* Hide the horizontal scroll */
+}
+
+.table-payments tbody td,
+.table-payments thead th {
+    width: 204px;
+}
+
+.table-payments table,
+.table-payments th,
+.table-payments td {
+    border: 1px solid #daa520;
+    border-collapse: collapse;
+}
+
+.table-payments th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #daa520;
+}
+.table-payments td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
 .checkboxes {
     align-items: center;
     text-align: center;

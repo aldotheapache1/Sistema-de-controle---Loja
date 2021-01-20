@@ -14,7 +14,7 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
         
     </head>
-    <body >
+    <body onload="startTime()">
 
         <main>
             <div class="container-fluid">

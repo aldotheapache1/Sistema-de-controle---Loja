@@ -32,20 +32,25 @@ checkboxes.on('change', function() {
     });
     if($('#payments').is(':checked')) {
       $('.table-sales').hide();
+      $('.table-payments').show();    
+
     }
     else
     {
-      $('.table-sales').show();   
+      $('.table-sales').show();  
+      $('.table-payments').hide(); 
     }
 });
 
 if($('#payments').is(':checked')) 
 {
   $('.table-sales').hide();    
+  $('.table-payments').show();    
 }
 else if($('#sales').is(':checked'))
 { 
   $('.table-sales').show(); 
+  $('.table-payments').hide();
 }
 
 function functionPassword(){
