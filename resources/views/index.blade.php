@@ -4,14 +4,14 @@
 
 @section('content')
 
-<div class="index">
+<div class="index" onload="startTime()">
     <aside class="left">
         <div class="logo-index">
             <img src="/img/logo.svg" alt="Logo Karoline Modas">
         </div>
 
         <div class="info-topo">
-            <a class="nome-usuario" href="{{ route('profile.show') }}">{{ Auth::user()->name }}</a>
+            <a class="nome-usuario" href="#">{{ Auth::user()->name }}</a>
             @if(isset($currentCashRegister))
                 <p class="caixa-aberto">Caixa Aberto</p>
                 <form action="/index/close/{{ $currentCashRegister['id'] }}" method="GET">

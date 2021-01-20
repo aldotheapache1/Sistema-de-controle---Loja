@@ -15,6 +15,7 @@
 
         <label for="password">Senha<label/>
         <input id="password"  type="password" name="password" required/>
+        <a class="toggle" id="toggle" onclick="functionPassword()"><img id="eye" class="toggle-eye" src="/img/eye-open.svg" alt="Mostar a senha"></a>
 
         <div class="btns">
             <button class="btn btn-entrar">

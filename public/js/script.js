@@ -47,3 +47,28 @@ else if($('#sales').is(':checked'))
 { 
   $('.table-sales').show(); 
 }
+
+function functionPassword(){
+  var password = document.getElementById("password");
+  var eye = document.getElementById("eye");
+  if (password.type === "password") 
+  {
+    password.type = "text";
+  } 
+  else 
+  {
+    password.type = "password";
+  }
+  if (eye.src === "http://127.0.0.1:8000/img/eye-open.svg") 
+  {
+    eye.src = "http://127.0.0.1:8000/img/eye-close.svg"
+  }
+  else 
+  {
+    eye.src = "http://127.0.0.1:8000/img/eye-open.svg"
+  }
+  
+}
+
+
+

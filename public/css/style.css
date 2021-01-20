@@ -73,6 +73,14 @@ body {
     text-decoration: bisque;
 }
 
+.toggle {
+    background: none;
+    border: none;
+    position: relative;
+    bottom: 53px;
+    left: 500px;
+}
+
 /*index */
 .index {
     width: 100%;
