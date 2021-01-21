@@ -97,70 +97,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
-                        <tr>
-                            <td>Camisa azul Lacoste</td>      
-                            <td>À vista</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>Gian Lucas da Silva Ramalho</td>      
-                            <td>5</td>      
-                            <td>R$ 500,00</td>      
-                        </tr>
+                        @foreach($sales as $sale)
+                            <tr>
+                                <td>Nome produto</td>
+                                @if($sale['sale_type'] == 1)  
+                                    <td>À vista</td>
+                                @elseif($sale['sale_type'] == 2)
+                                    <td>A prazo</td>
+                                @endif
+                                <td>{{$sale['user_id']}}</td>      
+                                <td>Cliente</td>      
+                                <td>Qtd de produtos</td>      
+                                <td>{{$sale['value']}}</td>      
+                            </tr>
+                        @endforeach
                         <tr>
                             <td class="table_total" colspan="3">Total em vendas: R$ {{$currentCashRegister['initial_value']}},00</td>      
                             <td class="table_total" colspan="3">Total em caixa: R$ {{$currentCashRegister['initial_value']}},00 <span>Vendas á vista(50,00) Pagamentos (50,00)</span></td>      
@@ -179,12 +129,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Darci</td>      
-                            <td>R$ 250,00</td>      
-                            <td>Gian Lucas da Silva</td>      
-                            <td>R$ 250,00</td>      
-                        </tr>
+                        @foreach($payments as $payment)
+                            <tr>
+                                <td>Cliente</td>      
+                                <td>R$ {{$payment['value']}}</td>      
+                                <td>{{$payment['user_id']}}</td>      
+                                <td>R$ 250,00</td>      
+                            </tr>
+                        @endforeach
                         <tr>
                             <td class="table_total" colspan="2">Total em vendas: R$ {{$currentCashRegister['initial_value']}},00</td>      
                             <td class="table_total" colspan="2">Total em caixa: R$ {{$currentCashRegister['initial_value']}},00 <span>Vendas á vista(50,00) Pagamentos (50,00)</span></td>      

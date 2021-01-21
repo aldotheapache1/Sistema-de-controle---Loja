@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CashRegister;
+use App\Models\Sales;
+use App\Models\Payments;
 
 
 class MyController extends Controller
@@ -37,7 +39,13 @@ class MyController extends Controller
     {
         $currentCashRegister = CashRegister::where('open_close', 1)->first()->toArray();
 
-        return view('index', ['currentCashRegister' => $currentCashRegister]);
+        $sales = Sales::where('cash_registers_id', $currentCashRegister['id'])->get();
+        $payments = Payments::where('cash_registers_id', $currentCashRegister['id'])->get();
+
+
+
+
+        return view('index', ['currentCashRegister' => $currentCashRegister, 'sales' => $sales, 'payments' => $payments]);
     }
 
     public function closeCashRegister($id)
