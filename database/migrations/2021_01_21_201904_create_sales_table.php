@@ -18,7 +18,7 @@ class CreateSalesTable extends Migration
             $table->timestamps();
             $table->float("value", 8, 2);
             $table->foreignId('user_id')->constrained('users');
-            //$table->foreignId('client_id')->constrained('clients');
+            $table->foreignId('client_id')->constrained('clients');
             $table->integer('sale_type');//1 a vista 2 a prazo
             $table->foreignId('cash_registers_id')->constrained('cash_registers');
         });

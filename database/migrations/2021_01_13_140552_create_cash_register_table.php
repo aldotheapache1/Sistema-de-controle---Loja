@@ -16,7 +16,7 @@ class CreateCashRegisterTable extends Migration
         Schema::create('cash_registers', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->float("initial_value", 8, 2);
+            $table->float("initial_value", 8, 2); //mudar para value apenas
             $table->boolean("open_close");
             $table->integer('sales_amount');
             $table->foreignId('opening_user_id')->constrained('users');
