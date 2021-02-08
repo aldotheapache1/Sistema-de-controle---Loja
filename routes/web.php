@@ -19,17 +19,16 @@ use App\Http\Controllers\MyController;
 //})->middleware('auth');
 
 Route::get('/',  [MyController::class, 'checkCashRegisterOpen'])->middleware('auth');
-
-
-
-Route::get('/dashboard', function () {
-    return view('index');
-})->middleware('auth');
+Route::get('/close/{id}', [MyController::class, 'closeCashRegister'])->middleware('auth');
+Route::get('/clients',  [MyController::class, 'clients'])->middleware('auth');
+Route::get('/clients/create',  [MyController::class, 'clientsAdd'])->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
     return view('index');
 })->name('index');
 
-Route::post('/index', [MyController::class, 'storeCashRegister'])->middleware('auth');
-Route::get('/index/close/{id}', [MyController::class, 'closeCashRegister'])->middleware('auth');
+Route::post('/', [MyController::class, 'storeCashRegister'])->middleware('auth');
+Route::post('/clients', [MyController::class, 'storeClients'])->middleware('auth');
+
+
 

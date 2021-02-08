@@ -18,7 +18,7 @@ class CreateClientsTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('CPF')->unique();
-            $table->float("debt", 8, 2);
+            $table->float("debt", 8, 2)->nullable();
             $table->integer('client_type'); //1 - normal 2 - venda a prazo 3 - usuario padrão venda rapida
         });
     }

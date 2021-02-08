@@ -26,6 +26,10 @@
                     {{ __('Esqueceu sua senha?') }}
                 </a>
             @endif
+            <br>
+                <a href="#">
+                    {{ __('Novo usuário? Cadastre-se') }}
+                </a>
         </div>
     </form>
 </div>

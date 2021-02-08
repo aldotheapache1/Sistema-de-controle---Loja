@@ -20,6 +20,22 @@ body {
     padding: 10px 30px;
 }
 
+.div-btn-form {
+    text-align: center;
+}
+
+.btn-confirm {
+    border-radius: 0;
+    color: #339900;
+    border: 4px solid #339900;
+    padding: 10px 70px;
+}
+
+.btn-confirm:hover {
+    color: #55ff00;
+    border: 4px solid #55ff00;
+}
+
 /* Login */
 .logo {
     text-align: center;
@@ -188,20 +204,6 @@ body {
 .form-valor-caixa input:focus {
     outline: none;
 }
-.div-botao-caixa {
-    text-align: center;
-}
-.btn-caixa {
-    border-radius: 0;
-    color: #339900;
-    border: 4px solid #339900;
-    padding: 10px 70px;
-}
-
-.btn-caixa:hover {
-    color: #55ff00;
-    border: 4px solid #55ff00;
-}
 
 .info-topo .btn-fechar-caixa {
     color: #f42424;
@@ -357,6 +359,83 @@ tr .table_total {
     line-height: 16px;
     color: #ffffff;
 }
+/* clientes*/
+
+.clients {
+    margin: 0 25px 0 25px;
+}
+.client {
+    width: 150px;
+    height: 220px;
+    padding: 10px;
+    border: #daa520 1px solid;
+    margin: 25px;
+    float: left;
+}
+.name-client {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+.cpf-client {
+    font-size: 14px;
+    color: #969083;
+}
+.debt-client {
+    font-size: 14px;
+    color: #969083;
+}
+.type-client {
+    font-size: 14px;
+    color: #969083;
+}
+
+.add-client {
+    width: 150px;
+    height: 220px;
+    padding: 10px;
+    border: #daa520 1px solid;
+    margin: 25px;
+    float: left;
+}
+
+.add-client p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+.form-client {
+    padding: 150px 230px;
+}
+.form-client label {
+    display: block;
+}
+.form-client input,
+.form-client select {
+    font-size: 16px;
+    width: 548px;
+    height: 40px;
+    background: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #fff;
+    border: 2px solid #daa520;
+}
+
+.form-client select option {
+    color: #000;
+    background: transparent;
+}
+
+.form-client input:focus {
+    outline: none;
+}
+.form-client select:focus {
+    outline: none;
+}
+
 /* footer */
 footer {
     text-align: center;

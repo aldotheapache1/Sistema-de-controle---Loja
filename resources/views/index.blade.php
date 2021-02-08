@@ -1,13 +1,15 @@
 @extends('layouts.main')
 
-@section('title', 'Karoline Modas - Index')
+@section('title', 'Karoline Modas - home')
 
 @section('content')
 
 <div class="index" >
     <aside class="left">
         <div class="logo-index">
-            <img src="/img/logo.svg" alt="Logo Karoline Modas">
+            <a href="/">
+                <img src="/img/logo.svg" alt="Logo Karoline Modas">
+            </a>
         </div>
 
         <div class="info-topo">
@@ -39,7 +41,7 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#">Clientes</a>
+                    <a href="/clients">Clientes</a>
                 </li>
             </ul>
             <ul>
@@ -146,12 +148,12 @@
             </div>        
         @else
             <div class="form-valor-caixa">
-                <form action="/index" method="POST">
+                <form action="/" method="POST">
                     @csrf
                     <label for="initial_value">Valor inicial do caixa</label>
                     <input name="initial_value" type="number" min="1" step="any" placeholder="R$ 100,00"/>
-                    <div class="div-botao-caixa">
-                        <button type="submit" class="btn btn-caixa">Abrir o Caixa</button>
+                    <div class="div-btn-form">
+                        <button type="submit" class="btn btn-confirm">Abrir o Caixa</button>
                     </div>
                 </form>
             </div>
